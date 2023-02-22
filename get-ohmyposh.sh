@@ -9,14 +9,11 @@ unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
 chmod u+rw ~/.poshthemes/*.omp.*
 rm ~/.poshthemes/themes.zip
 
-#sudo chown $USER: /usr/local/bin/oh-my-posh
 sudo chmod 755 /usr/local/bin/oh-my-posh
 
 oh-my-posh font install
 
-echo 'eval "$(oh-my-posh init bash)"' | tee -a ~/.profile
-echo export TERM=xterm-256color | tee -a ~/.profile
+echo 'export TERM=xterm-256color' | tee -a ~/.bashrc
+echo 'eval "$(oh-my-posh init bash)"' | tee -a ~/.bashrc
 exec bash
-. ~/.profile
-
 
