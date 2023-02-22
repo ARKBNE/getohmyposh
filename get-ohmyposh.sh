@@ -9,8 +9,8 @@ unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
 chmod u+rw ~/.poshthemes/*.omp.*
 rm ~/.poshthemes/themes.zip
 
-sudo chown $USER: /usr/local/bin/oh-my-posh
-sudo chmod 770 /usr/local/bin/oh-my-posh
+#sudo chown $USER: /usr/local/bin/oh-my-posh
+sudo chmod 755 /usr/local/bin/oh-my-posh
 
 oh-my-posh font install
 
